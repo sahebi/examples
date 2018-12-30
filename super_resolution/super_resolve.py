@@ -12,7 +12,7 @@ parser = argparse.ArgumentParser(description='PyTorch Super Res Example')
 parser.add_argument('--input_image', type=str, required=True, help='input image to use')
 parser.add_argument('--model', type=str, required=True, help='model file to use')
 parser.add_argument('--output_filename', type=str, help='where to save the output image')
-parser.add_argument('--cuda', action='store_true', help='use cuda')
+parser.add_argument('--cuda', default=True, action='store_true', help='use cuda')
 opt = parser.parse_args()
 
 print(opt)
